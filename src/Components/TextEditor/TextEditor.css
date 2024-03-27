@@ -1,0 +1,110 @@
+#container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100%;
+    /* align-items: center; */
+}
+
+#theme-cntrl, header{
+    align-self: center;
+}
+
+#theme-cntrl{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#toggle-conainer{
+    width: 2rem;
+    height: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 2px 2px #b3b2b2;
+    padding: 0.1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+#toggle-switch{
+    height: 100%;
+    width: 12px;
+    border-radius:50%;
+    background-color: #136270;
+}
+
+.toggle-switch-dark-mode{
+    transform: translateX(calc(100% + 5px));
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+.toggle-switch-light-mode{
+    transform: translateX(calc(-100% + 12px));
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea{
+    height: 8rem;
+    padding: 1rem;
+}
+
+#btn-container{
+    display: flex;
+    gap: 0.625rem;
+}
+
+#btn-container>button{
+    padding: 0.625rem 1rem;
+    border-radius: 0.625rem;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.case-change-btn{
+    background-color: #13a313;
+}
+
+.clear-btn{
+    background-color: #ff0000;
+}
+
+.copy-btn{
+    background-color: #136270 ;
+}
+
+.remove-space-btn{
+    background-color: rgb(99, 18, 161);
+}
+
+#output-container{
+    display: flex;
+    flex-direction: column;
+    margin-top:1rem;
+}
+
+.dark-mode{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+@media screen and (max-width:558.5px) {
+    #btn-container{
+        flex-direction: column;
+    }
+
+    #container{
+        overflow-y: scrollk;
+    }
+}
