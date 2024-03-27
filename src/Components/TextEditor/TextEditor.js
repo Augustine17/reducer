@@ -75,7 +75,7 @@ const TextEditor = () => {
     }
 
   return (
-    <div id='container' className={state.dark_mode && 'dark-mode'}>
+    <div id='container' className={state.darkMode ? 'dark-mode' : 'light-mode'}>
             <div id='theme-cntrl'>
                 <div id='toggle-conainer' onClick={themeHandler}>
                     <div id='toggle-switch' className={state.darkMode ? 'toggle-switch-dark-mode' : "toggle-switch-light-mode"}></div>
